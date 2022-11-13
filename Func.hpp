@@ -1,6 +1,20 @@
 #pragma once
 
-int inputData(int &getNumber);
+void outputMatrix(int **matrix, int N);
 
-void outputData();
+void inputMatrix(int **matrix, int N);
+
+int getN(int &N);
+
+bool isPrime(int &number);
+
+bool isChangeMatrix(int **matrix, int N);
+
+int getStringNorm(int **matrix, int N);
+
+int **sortMatrix(int **matrix);
+
+
+
+
 
