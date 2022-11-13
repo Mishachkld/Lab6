@@ -10,9 +10,10 @@ int main() {
         matrix[i] = new int[N];
     }
     inputMatrix(matrix, N);
+//    std::cout << isChangeMatrix(matrix, N) << " ";
     if (isChangeMatrix(matrix, N))
-        getStringNorm(matrix, N);
-    std::swap(matrix[0], matrix[1]);
+       matrix =  sortMatrix(matrix, N);
+//    std::swap(matrix[0], matrix[1]);
 
     outputMatrix(matrix, N);
 

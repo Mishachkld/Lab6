@@ -10,9 +10,8 @@ bool isPrime(int &number);
 
 bool isChangeMatrix(int **matrix, int N);
 
-int getStringNorm(int **matrix, int N);
 
-int **sortMatrix(int **matrix);
+int **sortMatrix(int **matrix, int N);
 
 
 
