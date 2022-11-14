@@ -11,7 +11,7 @@ int main() {
     }
     inputMatrix(matrix, N);  // ввод матрицы с файла
     if (isChangeMatrix(matrix, N))
-       matrix =  sortMatrix(matrix, N);
+      sortMatrix(matrix, N);
 
     outputMatrix(matrix, N);
 
