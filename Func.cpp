@@ -3,7 +3,8 @@
 #include <fstream>
 #include "Func.hpp"
 
-
+#define SIZE_ARRAY 101
+namespace ms{
 
 void outputMatrix(int **matrix, int &N) {
     std::ofstream file(R"(D:\C++Project\Lab6\output.txt)", std::ios::out);
@@ -60,7 +61,7 @@ bool isChangeMatrix(int **matrix, int &N) {
 }
 
 void sortMatrix(int **matrix, int &N) { // отсортировать по убыванию нормы столбцов (т.е. столбец с наибольшей нормой на 1-ом месте, с менньшей на 2-ом и т.д.)
-    int counterNorm[N];
+    int counterNorm[SIZE_ARRAY];
     for (int j = 0; j < N; j++) {
         int norm = 0;
         for (int i = 0; i < N; i++) {
@@ -82,5 +83,5 @@ void sortMatrix(int **matrix, int &N) { // отсортировать по уб�
 //    return matrix;
 }
 
-
+}
 
